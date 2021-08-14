@@ -1,6 +1,8 @@
 body
 {
-    background-color: gainsboro;
+    background-color: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 html
@@ -18,6 +20,49 @@ a:hover
     color:deepskyblue;
     text-decoration: none;
     cursor: pointer;
+}
+
+.Shout
+{
+    display: block;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+    color: gainsboro;
+    font-size: 50px;
+    font: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.SocialLogo
+{
+    height: 100px;
+    width: 100px;
+}
+
+.SocialLinks
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    justify-content: space-evenly;
+    color: gainsboro;
+    font-size: 40px;
+    font: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.LargeLogo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 400px;
 }
 
 .UtilityNavigation
