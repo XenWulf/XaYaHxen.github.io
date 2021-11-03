@@ -1,63 +1,324 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
     <head>
-
-
-        <!-- #region CSS-->
-            <link rel="stylesheet" href="CSS/Styles.css">
-        <!--#endregion CSS-->
-
-        <title>
-            Alexander Bowerman
-        </title>
-
-        <div>
-
-            <div class = "UtilityNavigation">
-
-                <a href ="index.html">
-
-                    Alexander Bowerman
-
-                </a>
-                <a href="about.html">
-
-                    About
-
-                </a>
-                <a href="contact.html">
-
-                    Contact
-
-                </a>
-
-            </div>
-
-        </div>
-        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Alexander Bowerman</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Alexander Bowerman</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>   
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Alexander
+                        <span class="text-primary">Bowerman</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Game Developer · Programmer · 3D Artist ·
+                        <a href="mailto:xenoryx@outlook.com">xenoryx@outlook.com</a>
+                    </div>
+                    <p class="lead mb-5">I am an experienced Game Developer who specializes in Unity and Unreal Engine.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/alexander-bowerman/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/XaYaHxen"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+                        <!-- Portfolio-->
+            <section class="resume-section" id="portfolio">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Portfolio</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <h3 class="mb-0">Unity Project: SPIRITSCAPE</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/iN6jo6rkw5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>In this video I showcase the newly added Randomized Harvest Cycles for the Resource System, Notification UI System integrated with the Skilling System, and Audio Controls within the Settings UI.
+                            </p>
 
-    <body>
+                            <p>
+                                Features of the Randomized Harvest Cycle:
+                                <li>
+                                    - Randomized Cooldown time in-between harvests
+                                </li>
+                                <li>
+                                    - Randomized max yield amount of resources
+                                </li>
+                                <li>
+                                    - Current yield amount tracking (will not reset if defocused, but will only update when within render distance of player)
+                                </li>
+                            </p>
+                                
+                            <p>
+                                Current Features of the Notification System:
+                                <li>
+                                    - Notification Queue using FIFO Logic (First In, First Out)
+                                </li>
+                                <li>
+                                    - Level-Up Notification added to the Queue, on Skill Level-Up
+                                </li>
+                                <li>
+                                    - Firework Audio Clip played upon notification shown.
+                                </li>
+                            </p>
+                                
+                            <p>
+                                Current Features of the Settings System:
+                                <li>
+                                    - Master Volume (controls all volume output, main mixing channel)
+                                </li>
+                                <li>
+                                    - Music Volume (controls music volume output, child mixing channel of main)
+                                </li>
+                                <li>
+                                    - Game Volume (controls 3D-SFX, 2D-SFX(UI), and other various game volume output, child mixing channel of main)
+                                </li>
+                            </p>
+                        </li>
+                        <hr class="m-0" />
+                        <li>
+                            <h3 class="mb-0">Unreal Project: Life Is Short</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/II-rP1xoy6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>In this video I showcase the game mechanics within Life Is Short.
+                            </p>
 
-        <div class="Headshot">
+                            <p>
+                                Features of the Animation System:
+                                <li>
+                                    - Locomotion
+                                </li>
+                                <li>
+                                    - Close Quarters Combat
+                                </li>
+                                <li>
+                                    - Falling based on height and velocity
+                                </li>
+                            </p>
+                                
+                            <p>
+                                Current Features of the Economy System:
+                                <li>
+                                    - Player has a wallet with currency
+                                </li>
+                                <li>
+                                    - ATMs are placed around the map, which give player's access to their bank balance
+                                </li>
+                                <li>
+                                    - Players can withdraw and deposit currency into/from their bank balance
+                                </li>
+                            </p>
+                                
+                            <p>
+                                Current Features of the Interaction System:
+                                <li>
+                                    - Players can interact with Game Objects derived from the parent Interactable Class
+                                </li>
+                                <li>
+                                    - Interactables are modular and can be modified to serve any purpose desired
+                                </li>
+                            </p>
+                        </li>
+                        <hr class="m-0" />
+                        <li>
+                            <h3 class="mb-0">Unreal Project: Medieval RPG</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KPD93CBOGRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>In this video I showcase the game mechanics within a Medieval RPG.
+                            </p>
 
-            <img src="Assets/Headshot_2018.jpg" alt="AlexanderBowerman">
+                            <p>
+                                Features of the Animation System:
+                                <li>
+                                    - Locomotion
+                                </li>
+                                <li>
+                                    - Equipping weapons
+                                </li>
+                                <li>
+                                    - Falling based on height and velocity
+                                </li>
+                            </p>
+
+                            <p>
+                                Features of the UI System:
+                                <li>
+                                    - Health UI
+                                </li>
+                                <li>
+                                    - Stamina UI
+                                </li>
+                                <li>
+                                    - Magic UI
+                                </li>
+                                <li>
+                                    - Death UI
+                                </li>
+                            </p>
+                        </li>
+                        <hr class="m-0" />
+                        <li>
+                            <h3 class="mb-0">GitHub Template: Example Unity 3D Project</h3>
+                            <a href="https://github.com/Xenoryx-Studios/Example-UNITY-Project">
+                                <img src="Assets/UnityLogo.png" alt="Unity Logo" title="Example Unity 3D Project Template">
+                            </a>
+                            <p>This Github Project Template is a Free to Use asset for anyone who desires to use it</p>
+                            <p>I created this to help other Game Developers save time when creating repos for a Unity 3D Project, and streamline their workflow</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+                        <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                        <p>
+                            C++
+                        </p>
+                        <p>
+                            C#
+                        </p>
+                        <p>
+                            Unity Engine
+                        </p>
+                        <p>
+                            Unreal Engine
+                        </p>
+                        <p>
+                            Blender
+                        </p>
+                        <p>
+                            3DSMax
+                        </p>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Game Engine Research & Development
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Game Mechanic Testing & Debugging
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Functional Teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Game Programmer</h3>
+                            <div class="subheading mb-3">Champignon Studios</div>
+                            <p>Specialized in Gameplay and Engine programming for Unreal Engine in C++.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2020 - December 2020</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Algonquin College</h3>
+                            <div class="subheading mb-3">Advanced Diploma · Game Development</div>
+                            <ul class="fa-ul mb-0">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Game Programming in C++/C#
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Game Engine Programming in C++, GLSL, Lua
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    3D Modelling, Rigging, Animation in 3DSMax
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Game Design Document, Level Design Document, Technical Design Document, Module Design Document
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    UXF/UML, CRC
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2020 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Carleton University</h3>
+                            <div class="subheading mb-3">Bachelor of Fine Arts · Psychology</div>
+                            <ul class="fa-ul mb-0">
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Learning Behaviours
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Pattern Analysis
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Sociology
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2016 - April 2018</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+
 
         </div>
-
-        <div class="Shout">
-
-            I am Alexander Bowerman!
-
-        </div>
-
-        <div class="Shout">
-
-            Welcome to my Virtual Portfolio!
-
-        </div>
-
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
-
 </html>
