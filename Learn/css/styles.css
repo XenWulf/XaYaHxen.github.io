@@ -48,6 +48,7 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
+  --bs-unreal-rgb: 220, 161, 0;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -7839,6 +7840,11 @@ textarea.form-control-lg {
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-unreal {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-unreal-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-dark {
