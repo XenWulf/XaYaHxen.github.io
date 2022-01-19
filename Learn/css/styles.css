@@ -8105,6 +8105,44 @@ textarea.form-control-lg {
     gap: 3rem !important;
   }
 
+  .gap-gr-row-0 {
+    grid-row-gap: 0 !important;
+  }
+  .gap-gr-row-1 {
+    grid-row-gap: 0.25rem !important;
+  }
+  .gap-gr-row-2 {
+    grid-row-gap: 0.5rem !important;
+  }
+  .gap-gr-row-3 {
+    grid-row-gap: 1rem !important;
+  }
+  .gap-gr-row-4 {
+    grid-row-gap: 1.5rem !important;
+  }
+  .gap-gr-row-5 {
+    grid-row-gap: 3rem !important;
+  }
+
+  .gap-gr-col-0 {
+    grid-column-gap: 0 !important;
+  }
+  .gap-gr-col-1 {
+    grid-column-gap: 0.25rem !important;
+  }
+  .gap-gr-col-2 {
+    grid-column-gap: 0.5rem !important;
+  }
+  .gap-gr-col-3 {
+    grid-column-gap: 1rem !important;
+  }
+  .gap-gr-col-4 {
+    grid-column-gap: 1.5rem !important;
+  }
+  .gap-gr-col-5 {
+    grid-column-gap: 3rem !important;
+  }
+
   .justify-content-sm-start {
     justify-content: flex-start !important;
   }
