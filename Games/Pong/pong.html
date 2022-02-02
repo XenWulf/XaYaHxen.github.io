@@ -1,0 +1,127 @@
+<canvas id="gc" width="640" height="480"></canvas>
+<script>
+
+    //Variables
+    p1y=p2y=40; //Paddle 1 & 2
+    pt=10;  //Paddle Width
+    ph=100; //Paddle Height
+    bx=by=50;   //Ball x,y
+    bd=5;   //Ball Dimension
+    xv=yv=4;    //Ball Velocity
+    score1=score2=0;    //Player Scores
+    ais=2;  //AI Speed
+
+    //BeginPlay
+    window.onload=function()
+    {
+        c=document.getElementById('gc');
+        cc=c.getContext('2d');
+        //Create Tick/Update
+        setInterval(update, 1000/30);
+        //Add Player Input Listener
+        c.addEventListener('mousemove',playerinput)
+    }
+
+    //Play Input
+    function playerinput(e)
+    {
+        //Y = Mouse Y
+        p1y = e.clientY-ph/2;   //Mouse Y - HalfHeight(Centre)
+    }
+
+    //Reset
+    function reset()
+    {
+        //Centre the ball
+        bx=c.width/2;   //Horizontal Centre
+        by=c.height/2;  //Vertical Centre
+        xv=-xv;
+        yv=3;
+    }
+
+    //Tick
+    function update()
+    {
+        //Move Ball
+        bx+=xv; //Ball x += x velocity
+        by+=yv; //Ball y += y velocity
+
+        //If Ball hits the top of screen
+        if(by<0 && yv<0)
+        {
+            //Reverse Y Velocity
+            yv=-yv;
+        }
+        //If Ball hits the bottom of screen
+        if(by>c.height && yv>0)
+        {
+            //Reverse Y Velocity
+            yv=-yv;
+        }
+        //If Ball hits the Left Side of screen
+        if(bx<0)
+        {
+            //Check if colliding with paddle 1
+            if(by>p1y && by<p1y+ph)
+            {
+                //Reverse X Velocity
+                xv=-xv
+                //Define Delta Y
+                dy=by-(p1y+ph/2);
+                yv=dy*0.3;
+            }
+            //Missed the paddle
+            else
+            {
+                //Increase P2 Score.
+                score2++;
+                reset();
+            }
+        }
+        //If Ball hits the Right Side of screen
+        if(bx>c.width)
+        {
+            //Check if colliding with paddle 2
+            if(by>p2y && by<p2y+ph)
+            {
+                //Reverse X Velocity
+                xv=-xv
+                //Define Delta Y
+                dy=by-(p2y+ph/2);
+                yv=dy*0.3;
+            }
+            //Missed the paddle
+            else
+            {
+                //Increase P1 Score.
+                score1++;
+                reset();
+            }
+        }
+        //AI
+        if(p2y+ph/2<by) //If Paddle2 centre is above ball
+        {
+            //Move it down by ai speed
+            p2y+=ais;
+        }
+        else
+        {
+            //Move it up by ai speed
+            p2y-=ais;
+        }
+
+        cc.fillStyle='black';
+        cc.fillRect(0,0,c.width,c.height);
+        cc.fillStyle='white';
+        //Draw Paddle 1
+        cc.fillRect(0,p1y,pt,ph);
+        //Draw Paddle 2
+        cc.fillRect(c.width-pt,p2y,pt,ph);
+        //Draw Ball
+        cc.fillRect(bx-bd/2,by,bd,bd);
+        //Draw Score 1 Text
+        cc.fillText(score1,100,100);
+        //Draw Score 2 Text
+        cc.fillText(score2,c.width-100,100);
+    }
+</script>
