@@ -11594,11 +11594,11 @@ body {
   }
 }
 
-.about-section {
+.internet-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 100, 0.8) 75%, rgba(0, 50, 200, 0.9) 100%);
 }
-.about-section p {
+.internet-section p {
   margin-bottom: 5rem;
 }
 
@@ -11610,27 +11610,27 @@ body {
   margin-bottom: 5rem;
 }
 
-.projects-section {
+.events-section {
   padding: 10rem 0;
 }
-.projects-section .featured-text {
+.events-section .featured-text {
   padding: 2rem;
 }
 @media (min-width: 992px) {
-  .projects-section .featured-text {
+  .events-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
 }
-.projects-section .project-text {
+.events-section .events-text {
   padding: 3rem;
   font-size: 90%;
 }
 @media (min-width: 992px) {
-  .projects-section .project-text {
+  .events-section .events-text {
     padding: 5rem;
   }
-  .projects-section .project-text hr {
+  .events-section .events-text hr {
     border-color: #64a19d;
     border-width: 0.25rem;
     width: 30%;
